@@ -6,8 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact-form.in</title>
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background: #111;
+      color: white;
+      font-family: 'Fira Code', monospace;
+    }
+
+    form {
+      padding: 6.5em 4em;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      background:slateblue;
+    }
+
+    input {
+      width: 25ch;
+      height: 1.25rem;
+    }
+
+    #spacing {
+      margin-bottom: 0.5rem;
+    }
+
+    #spacing-text {
+      margin-bottom: 1.25rem;
+    }
+
+    #submit {
+      width: 7ch;
+      height: 1.25rem;
+      align-self: flex-end;
+      margin-top: 0.5em;
+      cursor: pointer;
+    }
+
+    .txt {
+      font-size: 1.25rem;
+    }
+
+    .txt1 {
+      font-size: 1rem;
+      background: teal;
+      color: white;
+    }
+    
+
+  </style>
   <body>
-    <h1>h1</h1>
-    <h2>h2</h2>
+    <form>
+      <label class="txt" id="spacing">Name</label>
+      <input type="text" id="spacing-text">
+      <label class="txt" id="spacing">Email</label>
+      <input type="email" id="spacing-text">
+      <input class="txt1" type="submit" id="submit">
+    </form>
   </body>
 </html>
